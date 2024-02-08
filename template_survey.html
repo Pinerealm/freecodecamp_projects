@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Template Survey Form</title>
+    <link rel="stylesheet" href="survey_styles.css" />
+  </head>
+  <body>
+    <!-- Title and description -->
+    <h1 id="title">Template Survey Form</h1>
+    <p id="description">This is an example survey form.</p>
+
+    <!-- Survey form -->
+    <form id="survey-form" class="form">
+      <!-- Name field -->
+      <label id="name-label" for="name"
+        >Name:
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          required
+        /> </label
+      ><br /><br />
+
+      <!-- Email field -->
+      <label id="email-label" for="email"
+        >Email:
+        <input
+          id="email"
+          type="email"
+          name="email"
+          pattern="\w+@\w+.\w+"
+          placeholder="example@123.com"
+          required
+        /> </label
+      ><br /><br />
+
+      <!-- Age field -->
+      <label id="number-label" for="number"
+        >Age:
+        <input
+          id="number"
+          type="number"
+          pattern="\d+"
+          min="10"
+          max="120"
+          placeholder="20"
+        /> </label
+      ><br /><br />
+
+      <!-- Gender dropdown -->
+      <label for="dropdown"
+        >Gender:
+        <select name="gender" id="dropdown">
+          <option value="">--Choose your gender--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select> </label
+      ><br /><br />
+
+      <!-- Employment status radio buttons -->
+      <label
+        >Employment Status:<br />
+        <input
+          id="employed"
+          type="radio"
+          name="employed-unemployed"
+          value="employed"
+        />
+        <label for="employed">Employed</label>
+        <input
+          id="unemployed"
+          type="radio"
+          name="employed-unemployed"
+          value="unemployed"
+        />
+        <label for="unemployed">Unemployed</label> </label
+      ><br /><br />
+
+      <!-- Interests checkboxes -->
+      <label
+        >Select your interests:<br />
+        <input id="sports" type="checkbox" name="interests" value="sports" />
+        <label for="sports">Sports</label>
+        <input id="poetry" type="checkbox" name="interests" value="music" />
+        <label for="poetry">Poetry</label>
+
+        <input id="movies" type="checkbox" name="interests" value="movies" />
+        <label for="movies">Movies</label>
+        <input id="books" type="checkbox" name="interests" value="books" />
+        <label for="books">Books</label>
+
+        <input id="travel" type="checkbox" name="interests" value="travel" />
+        <label for="travel">Travel</label>
+        <input id="food" type="checkbox" name="interests" value="food" />
+        <label for="food">Food</label>
+        <input id="other" type="checkbox" name="interests" value="other" />
+        <label for="other">Other</label> </label
+      ><br /><br />
+
+      <!-- Comments textarea -->
+      <label for="comment">Any comments or suggestions?</label><br />
+      <textarea id="comment" name="comment" rows="5" cols="50"></textarea>
+      <br /><br />
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
